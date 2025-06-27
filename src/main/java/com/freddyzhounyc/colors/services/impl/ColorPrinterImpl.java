@@ -21,6 +21,6 @@ public class ColorPrinterImpl implements ColorPrinter {
 
     @Override
     public String print() {
-        return String.join(", ", redPrinter.printRed(), bluePrinter.printBlue(), greenPrinter.printGreen());
+        return String.join(", ", redPrinter.printRed(), greenPrinter.printGreen(), bluePrinter.printBlue());
     }
 }

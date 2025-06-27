@@ -14,8 +14,8 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class PrinterConfig {
     @Bean
-    public ColorPrinter colorPrinter() {
-        return new ColorPrinterImpl(redPrinter(), greenPrinter(), bluePrinter());
+    public ColorPrinter colorPrinter(RedPrinter redprinter, GreenPrinter greenPrinter, BluePrinter bluePrinter) {
+        return new ColorPrinterImpl(redprinter, greenPrinter, bluePrinter);
     }
 
     @Bean

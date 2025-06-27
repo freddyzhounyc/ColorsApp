@@ -4,7 +4,7 @@ import com.freddyzhounyc.colors.services.BluePrinter;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class EnglishBluePrinter implements BluePrinter {
     @Override
     public String printBlue() {

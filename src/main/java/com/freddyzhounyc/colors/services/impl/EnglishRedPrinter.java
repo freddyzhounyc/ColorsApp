@@ -4,7 +4,7 @@ import com.freddyzhounyc.colors.services.RedPrinter;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class EnglishRedPrinter implements RedPrinter {
     @Override
     public String printRed() {
